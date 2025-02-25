@@ -3,7 +3,7 @@ name: send message
 on:
   workflow_dispatch:
   schedule:
-    - cron: "45 * * * *"  # 매일 15시마다 실행
+    - cron: "51 * * * *"  # 매일 15시마다 실행
 
 jobs:
   send-message:
