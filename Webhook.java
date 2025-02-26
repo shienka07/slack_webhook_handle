@@ -17,7 +17,6 @@ public class Webhook {
         String titlePrompt = template2.formatted(llmResult);
         String titleResult = useLLM(titlePrompt);
         sendSlackMessage(titleResult, llmResult, llmImageResult);
-        sendSlackMessage(title, llmResult, llmImageResult);
     }
 
     public static String useLLMForImage(String prompt) {
